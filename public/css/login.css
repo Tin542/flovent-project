@@ -1,0 +1,49 @@
+@import "nav.css";
+@import "footer.css";
+@import "breadcrumb.css";
+
+.login-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 100px 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-container h1 {
+  font-weight: bold;
+  color: #2f6b45;
+  font-family: SVN-Gilroy;
+}
+.login-form {
+  display: block;
+  padding: 20px;
+  width: 402px;
+}
+.login-form input {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 361px;
+}
+.login-form span,
+a {
+  font-size: 16px;
+  font-family: SVN-Gilory;
+}
+.login-form a {
+  color: #2f6b45;
+}
+.forget-pw {
+  float: right;
+}
+
+.login-form button {
+  float: right;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: SVN-Gilory;
+  width: 150px;
+  padding: 5px 20px;
+}
