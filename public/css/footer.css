@@ -25,12 +25,18 @@
 
 .footer-items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 75px);
   height: auto;
-  grid-gap: 10px;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
 }
 .footer-items img {
   width: 60px;
   height: 60px;
   border-radius: 10px;
+  transition: 0.3s;
+}
+.footer-items img:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }

@@ -40,10 +40,17 @@ a {
 }
 
 .login-form button {
+  background-color: #235135;
+  color: #ffffff;
   float: right;
   border-radius: 10px;
   font-size: 16px;
   font-family: SVN-Gilory;
   width: 150px;
   padding: 5px 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.login-form button:hover {
+  background-color: #00ff00;
 }

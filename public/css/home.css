@@ -5,6 +5,7 @@
 .carousel-inner img {
   width: 100%;
   height: 500px;
+  background-size: cover;
 }
 
 /* left banner */
@@ -15,36 +16,36 @@
 }
 
 /* category */
-.nav-category {
+.category {
   padding-bottom: 20px;
 }
-.nav-category ul {
+.category ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #ffffff;
 }
-.nav-category li {
+.category li {
   float: left;
 }
-.nav-category li a,
+.category li a,
 button {
   display: block;
   color: black;
-  font-weight: bold;
+
   font-family: SVN-Gilroy;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   translation: 0.5s;
 }
-.nav-category li a:hover {
+.category li a:hover {
   color: #ffffff;
   background-color: #00ff00;
   border-radius: 12px;
 }
-.nav-category li button {
+.category li button {
   background-color: #235135;
   border: none;
   display: inline-block;
@@ -55,7 +56,7 @@ button {
   cursor: pointer;
   transition-duration: 0.4s;
 }
-.nav-category li button:hover {
+.category li button:hover {
   background-color: #00ff00;
 }
 /* product */
@@ -64,6 +65,7 @@ button {
   grid-template-columns: repeat(3, 1fr);
   height: auto;
   grid-row-gap: 30px;
+  grid-column-gap: 30px;
 }
 
 .product-card {
