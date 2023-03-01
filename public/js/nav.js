@@ -7,7 +7,7 @@ const createNav = () => {
           <div class="search">
             <ul class="link-container">
               <li class="link-items">
-                <a href="#" class="link">Trang chủ</a>
+                <a href="index.html" class="link">Trang chủ</a>
               </li>
               <li class="link-items">
                 <a href="#" class="link">Sản phẩm</a>
@@ -26,7 +26,7 @@ const createNav = () => {
             ><img style="width: 35px" src="image/delivery.png" alt=""
           /></a>
           <div class="btn-login-container">
-            <button class="btn-login">Đăng nhập</button>
+            <button onclick="loginPage()" class="btn-login">Đăng nhập</button>
           </div>
         </div>
       </div>
@@ -34,3 +34,7 @@ const createNav = () => {
 };
 
 createNav();
+
+const loginPage = () => {
+  window.location.href = 'login.html';
+}
