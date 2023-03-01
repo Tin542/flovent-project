@@ -1,0 +1,240 @@
+@import "nav.css";
+@import "footer.css";
+@import "breadcrumb.css";
+
+/* left filter */
+.left-filter {
+  width: 83%;
+  margin-top: 73px;
+}
+.left-filter h3 {
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 25px;
+}
+.filter-items {
+  margin-left: 20px;
+  margin-top: 21px;
+}
+.filter-items .btn-price {
+  background: #ffffff;
+  border: none;
+}
+.filter-items .btn-filter {
+  float: right;
+  border: none;
+  border-radius: 12px;
+  width: 102px;
+  background: #33744b;
+  color: white;
+  transition: 0.3s;
+}
+.filter-items .btn-filter:hover {
+  background: #00ff00;
+}
+
+.filter-items ul {
+  list-style: none;
+}
+input[type="checkbox"] {
+  float: right;
+  margin-top: 7px;
+  margin-right: 46px;
+}
+
+.kw-container {
+  display: grid;
+  grid-template-columns: repeat(2, 93px);
+  height: auto;
+  grid-row-gap: 19px;
+  grid-column-gap: 16px;
+}
+.kw-container span {
+  width: 84px;
+  background: #33744b;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+}
+
+/* category */
+.category {
+  margin-bottom: 20px;
+  border-radius: 12px;
+  height: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+.category-items {
+  margin: 6px 77px;
+  align-items: center;
+  display: flex;
+}
+
+.category-items button {
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  margin-right: 7px;
+  background: border-box;
+  border-radius: 12px;
+}
+.category-items button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* dropdown button */
+.dropdown {
+  display: inline-block;
+  position: relative;
+  margin-left: 83px;
+}
+
+.dd-button {
+  display: inline-block;
+  border: none;
+  border-radius: 12px;
+  padding: 0px 30px 2px 11px;
+  background-color: #ffffff;
+  cursor: pointer;
+  white-space: break-spaces;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.dd-button:after {
+  content: "";
+  position: absolute;
+  top: 63%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+.dd-button:hover {
+  background-color: #eeeeee;
+}
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+}
+
+.dd-input:checked + .dd-menu {
+  display: block;
+}
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* product */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+
+.product-card {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  transition: 0.3s;
+  flex: 0 0 auto;
+  width: 196px;
+  height: 324px;
+  margin-right: 40px;
+  box-sizing: border-box;
+  line-height: 11px;
+}
+.product-card img {
+  border-radius: 10px;
+  padding: 3px;
+  height: 234px;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.container-detail {
+  padding-top: 13px;
+  text-align: center;
+  font-family: SVN-Gilroy;
+}
+.checked {
+  color: #ffff00;
+}
+
+.paging-container {
+  margin-top: 40px;
+  border-radius: 12px;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  align-items: center;
+  display: flex;
+}
+.paging-items {
+  margin-left: 100px;
+  font-family: SVN-Gilroy;
+  display: inline-block;
+}
+.paging-items a {
+  padding: 8px 13px;
+  color: #ffffff;
+  background: #c0c0c0;
+  border: none;
+  border-radius: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.paging-items a:hover {
+  background-color: #4caf50;
+  color: white;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}

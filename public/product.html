@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flovent - Sản phẩm</title>
+    <link rel="stylesheet" href="css/product.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav-bar"></nav>
+    <header>
+      <ul class="breadcrumb">
+        <li><a href="#">Trang chủ</a></li>
+        <li>Sản phẩm</li>
+      </ul>
+    </header>
+    <main>
+      <div class="container p-sm-3 my-3 mx-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="left-filter">
+              <h3>Xếp theo giá</h3>
+              <div class="filter-items">
+                <span>Giá: </span>
+                <button onclick="decreasePrice()" class="btn-price">
+                  <i class="far fa-arrow-alt-circle-left"></i>
+                </button>
+                <span id="price">0</span>
+                <button onclick="increasePrice()" class="btn-price">
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                </button>
+                VND
+                <button class="btn-filter">Lọc</button>
+              </div>
+              <hr />
+              <h3>Thể loại</h3>
+              <div class="filter-items">
+                <ul>
+                  <li>
+                    <label for="plant"> Hoa khô</label>
+                    <input
+                      type="checkbox"
+                      id="plant"
+                      name="plant"
+                      value="Hoa khô"
+                    />
+                    <br />
+                  </li>
+                  <li>
+                    <label for="plant"> Đột biến</label>
+                    <input
+                      type="checkbox"
+                      id="plant"
+                      name="plant"
+                      value="Đột biến"
+                    />
+                  </li>
+                  <li>
+                    <label for="plant"> Xương rồng</label>
+                    <input
+                      type="checkbox"
+                      id="plant"
+                      name="plant"
+                      value="Xương rồng"
+                    />
+                  </li>
+                  <li>
+                    <label for="plant"> Sen đá</label>
+                    <input
+                      type="checkbox"
+                      id="plant"
+                      name="plant"
+                      value="Sen đá"
+                    />
+                  </li>
+                  <li>
+                    <label for="plant"> Sedum</label>
+                    <input
+                      type="checkbox"
+                      id="plant"
+                      name="plant"
+                      value="Sedum"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <hr />
+              <h3>Từ khóa</h3>
+              <div class="filter-items">
+                <div class="kw-container">
+                  <span>Giá rẻ</span>
+                  <span>Sen đá</span>
+                  <span>Sale</span>
+                  <span>Cute</span>
+                  <span>Giá rẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="category">
+              <div class="category-items">
+                <button>
+                  <i
+                    class="fa fa-filter"
+                    style="font-size: 25px; color: green"
+                  ></i>
+                </button>
+                <span>Hiển thị 1-9 trên 25 kết quả</span>
+                <label class="dropdown">
+                  <div class="dd-button">Sắp xếp theo:</div>
+
+                  <input type="checkbox" class="dd-input" id="test" />
+
+                  <ul class="dd-menu">
+                    <li>Tên</li>
+                    <li>Loại</li>
+                    <li>Giá</li>
+                  </ul>
+                </label>
+              </div>
+            </div>
+            <div class="product-container">
+              <div onclick="detailPage()" class="product-card">
+                <img
+                  src="image/product1.png"
+                  alt="Avatar"
+                  style="width: 100%"
+                />
+                <div class="container-detail">
+                  <p>White Crassulaceae</p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p>42.000VND</p>
+                </div>
+              </div>
+              <div onclick="detailPage()" class="product-card">
+                <img
+                  src="image/product1.png"
+                  alt="Avatar"
+                  style="width: 100%"
+                />
+                <div class="container-detail">
+                  <p>White Crassulaceae</p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p>42.000VND</p>
+                </div>
+              </div>
+              <div onclick="detailPage()" class="product-card">
+                <img
+                  src="image/product1.png"
+                  alt="Avatar"
+                  style="width: 100%"
+                />
+                <div class="container-detail">
+                  <p>White Crassulaceae</p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p>42.000VND</p>
+                </div>
+              </div>
+              <div onclick="detailPage()" class="product-card">
+                <img
+                  src="image/product1.png"
+                  alt="Avatar"
+                  style="width: 100%"
+                />
+                <div class="container-detail">
+                  <p>White Crassulaceae</p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p>42.000VND</p>
+                </div>
+              </div>
+              <div onclick="detailPage()" class="product-card">
+                <img
+                  src="image/product1.png"
+                  alt="Avatar"
+                  style="width: 100%"
+                />
+                <div class="container-detail">
+                  <p>White Crassulaceae</p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p>42.000VND</p>
+                </div>
+              </div>
+              <div onclick="detailPage()" class="product-card">
+                <img
+                  src="image/product1.png"
+                  alt="Avatar"
+                  style="width: 100%"
+                />
+                <div class="container-detail">
+                  <p>White Crassulaceae</p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p class="fa fa-star checked"></p>
+                  <p>42.000VND</p>
+                </div>
+              </div>
+            </div>
+            <div class="paging-container">
+              <div class="paging-items">
+                <span>Trước</span>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <span>Sau</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
