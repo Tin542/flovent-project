@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flovent - Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="css/detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar"></nav>
+    <header>
+      <ul class="breadcrumb">
+        <li><a href="#">Trang chủ</a></li>
+        <li>Chi tiết sản phẩm</li>
+      </ul>
+    </header>
+    <main>
+      <section class="product-detail">
+        <div class="image-slider">
+          <div class="product-images">
+            <img src="image/product-detail1.png" class="active" alt="" />
+            <img src="image/product-detail2.png" class="" alt="" />
+            <img src="image/product-detail3.png" class="" alt="" />
+            <img src="image/product-detail4.png" class="" alt="" />
+          </div>
+        </div>
+        <div class="details">
+          <p class="product-keyword">
+            Từ khóa: <span>Sedium, Xương rồng nhỏ</span>
+          </p>
+          <h2 class="product-brand">
+            Little Jewel <span class="product-price">40.000VND</span>
+          </h2>
+
+          <p class="product-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </p>
+
+          <span class="product-height">Chiều cao: <span>20cm</span></span>
+          <span class="product-status">Tình trạng: <span>còn hàng</span></span>
+          <p class="product-size">
+            Size: <a href="#">Nhỏ</a><a href="#">Lớn</a>
+          </p>
+
+          <div>
+            <span class="product-amount">Số lượng: </span>
+            <button onclick="minusAmount()" class="btn-amount"><i class="far fa-arrow-alt-circle-left"></i></button>
+            <span id="thongbao">0</span>
+            <button onclick="addAmount()" class="btn-amount"><i class="far fa-arrow-alt-circle-right"></i></button>
+            <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ</button>
+          </div>
+          <hr style="margin-top:44px"/>
+          <div class="something">
+            <a href="#">Chi tiết</a>
+            <a href="#">Cẩm nang</a>
+            <a href="#">Vận chuyển</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/detail.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

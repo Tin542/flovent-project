@@ -14,3 +14,7 @@ productContainer.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+const detailPage = () => {
+    window.location.href = 'detail.html';
+}
