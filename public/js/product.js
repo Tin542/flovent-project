@@ -11,3 +11,7 @@ const decreasePrice = () => {
   }
   document.getElementById("price").innerHTML = price;
 };
+
+const detailPage = () => {
+  window.location.href = 'detail.html';
+}

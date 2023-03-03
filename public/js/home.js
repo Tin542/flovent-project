@@ -15,6 +15,3 @@ productContainer.forEach((item, i) => {
     })
 })
 
-const detailPage = () => {
-    window.location.href = 'detail.html';
-}
