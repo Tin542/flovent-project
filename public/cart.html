@@ -83,7 +83,8 @@
               </div>
             </div>
             <div class="btn-check">
-              <button>Kiểm tra</button></br>
+              <button onclick="checkoutPage()">Kiểm tra</button>
+              <p></p>
               <a href="product.html">Tiếp tục mua sắm</a>
             </div>
           </div>
@@ -93,7 +94,11 @@
     <footer class="footer"></footer>
 
     <script src="js/nav.js"></script>
-    <script src="js/cart.js"></script>
     <script src="js/footer.js"></script>
+    <script>
+      const checkoutPage = () => {
+        window.location.href = "checkout.html";
+      };
+    </script>
   </body>
 </html>

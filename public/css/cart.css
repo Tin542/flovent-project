@@ -67,9 +67,9 @@
 }
 
 .btn-check {
+  width: 300px;
   text-align: center;
   margin-top: 20px;
-  margin-right: 50px;
 }
 .btn-check button {
   width: 64%;

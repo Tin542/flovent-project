@@ -1,0 +1,122 @@
+@import "nav.css";
+@import "footer.css";
+@import "breadcrumb.css";
+
+.checkout-form-container {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 90%;
+  float: right;
+  margin-bottom: 50px;
+}
+.header-container {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  background-color: #235135;
+  color: white;
+}
+.checkout-form {
+  width: 100%;
+  padding: 20px;
+  margin-left: -9px;
+  margin-bottom: 30px;
+}
+
+.col-25 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-25 label {
+  padding-left: 45px;
+}
+
+.col-75 {
+  display: flex;
+  width: 75%;
+  margin-top: 6px;
+  align-items: center;
+}
+.col-75 input {
+  width: 70%;
+  height: 40px;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+}
+
+.checkout-info {
+  background-color: #ffffff;
+  width: 400px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: SVN-Gilroy;
+  text-align: left;
+}
+
+.checkout-info .info-header {
+  padding-left: 12px;
+  padding-top: 3px;
+  text-align: center;
+  background-color: #235135;
+  color: white;
+  height: 33px;
+}
+
+.info-content table {
+  width: 100%;
+  text-align: center;
+}
+th,
+td {
+  width: 100px;
+  height: 41px;
+}
+td {
+  border: 1px solid #000000;
+}
+
+.price-checkout {
+  border-top: 1px solid #000000;
+  padding-top: 10px;
+}
+.price-checkout p {
+  padding-left: 48px;
+  font-weight: bold;
+}
+.price-checkout p span {
+  float: right;
+  padding-right: 48px;
+  font-weight: none;
+}
+
+.btn-checkout {
+  width: 400px;
+  text-align: center;
+  margin-top: 20px;
+}
+.btn-checkout button {
+  width: 64%;
+  height: 32px;
+  border: none;
+  background: #235135;
+  color: white;
+  border-radius: 5px;
+}
+.btn-checkout button:hover {
+  background: #00ff00;
+}
+
+.checkout-success {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}
