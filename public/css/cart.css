@@ -1,0 +1,84 @@
+@import "nav.css";
+@import "footer.css";
+@import "breadcrumb.css";
+
+.table-cart {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.table-cart table {
+  width: 100%;
+}
+
+#cart {
+  font-family: SVN-Gilroy;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#cart th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #235135;
+  color: white;
+}
+
+#cart td,
+#cart th {
+  border: 1px solid #000000;
+  padding: 8px;
+}
+#cart tr:hover {
+  background-color: #ddd;
+}
+#cart td {
+  text-align: center;
+}
+#cart td img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.cart-info {
+  background-color: #ffffff;
+  width: 300px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: SVN-Gilroy;
+  text-align: left;
+}
+
+.cart-info .info-header {
+  padding-left: 12px;
+  padding-top: 7px;
+  text-align: left;
+  background-color: #235135;
+  color: white;
+  height: 40px;
+}
+.cart-info .info-content {
+  padding-top: 10px;
+  padding-left: 12px;
+}
+.info-content p span {
+  float: right;
+  padding-right: 12px;
+}
+
+.btn-check {
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.btn-check button {
+  width: 64%;
+  height: 32px;
+  border: none;
+  background: #235135;
+  color: white;
+  border-radius: 5px;
+}
+.btn-check button:hover {
+  background: #00ff00;
+}

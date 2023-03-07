@@ -18,6 +18,10 @@
   background: #ffffff;
 }
 
+.nav .nav-responsive {
+  display: none;
+}
+
 .brand-logo {
   height: 60px;
 }
@@ -105,69 +109,53 @@
   display: none;
 }
 
-@media screen and (max-width: 1184px) {
-  .nav a:not(:first-child) {
+/* responsive */
+
+@media (max-width: 1184px) {
+  .nav {
+    padding: 10px 0vw;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #ffffff;
+  }
+  .nav .nav-responsive {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav .nav-responsive button {
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  .nav .nav-responsive button:hover {
+    background: #d4d4d4;
+  }
+  .nav .nav-items {
     display: none;
   }
-  .nav a.link {
-    float: right;
+
+  /* .dropdown-content {
     display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
   }
-  .nav a.icon {
-    float: right;
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
   }
-}
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;} */
 
-@media screen and (max-width: 1184px) {
-  .nav.responsive {
-    position: relative;
-  }
-  .nav.responsive .icon {
-    /* position: absolute; */
-    right: 0;
-    top: 0;
-  }
-  div#myTopnav.nav {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .nav.responsive a {
-    float: none;
-    display: grid;
-    text-align: left;
-    align-items: stretch;
-    justify-content: start;
-    justify-items: start;
-    color: #00ff00;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .nav.responsive {
-    position: relative;
-  }
-  .nav.responsive .icon {
-    /* position: absolute; */
-    right: 0;
-    top: 0;
-  }
-  .btn-login {
-    display: none;
-  }
-  div#myTopnav.nav {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .nav.responsive a {
-    float: none;
-    display: grid;
-    text-align: left;
-    align-items: stretch;
-    justify-content: start;
-    justify-items: start;
-    color: #00ff00;
-  }
 }
