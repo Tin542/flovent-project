@@ -25,7 +25,7 @@ const createNav = () => {
               <li class="link-items"><a href="#" class="link">Blog</a></li>
             </ul>
           </div>
-          <a href="#" class="nav-icon"
+          <a href="account.html" class="nav-icon"
             ><img style="width: 20px" src="image/user.png" alt=""
           /></a>
           <a href="cart.html" class="nav-icon"
