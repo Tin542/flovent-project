@@ -16,6 +16,10 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <nav class="nav-bar"></nav>
@@ -62,7 +66,7 @@
             <button onclick="minusAmount()" class="btn-amount"><i class="far fa-arrow-alt-circle-left"></i></button>
             <span id="thongbao">0</span>
             <button onclick="addAmount()" class="btn-amount"><i class="far fa-arrow-alt-circle-right"></i></button>
-            <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ</button>
+            <button onclick="cartPage()" class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ</button>
           </div>
           <hr style="margin-top:44px"/>
           <div class="something">
@@ -78,5 +82,10 @@
     <script src="js/nav.js"></script>
     <script src="js/detail.js"></script>
     <script src="js/footer.js"></script>
+    <script>
+      const cartPage = () => {
+        window.location.href = 'cart.html';
+      }
+    </script>
   </body>
 </html>

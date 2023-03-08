@@ -4,12 +4,40 @@ const createNav = () => {
   nav.innerHTML = `
   <div class="nav">
         <div class="nav-responsive">
-          <button onclick="dropdownbtn()" class="dropbtn">
-            <i
-              class="fa fa-align-justify"
-              style="font-size: 50px; color: black"
-            ></i>
-          </button>
+          <div class="dropdown">
+            <button type="button" data-toggle="dropdown">
+              <i
+                class="fa fa-align-justify"
+                style="font-size: 50px; color: black"
+              ></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="index.html" class="link"
+                >Trang chủ</a
+              >
+              <a class="dropdown-item" href="product.html" class="link"
+                >Sản phẩm</a
+              >
+              <a class="dropdown-item" href="#" class="link">Dịch vụ</a>
+              <a class="dropdown-item" href="#" class="link">Blog</a>
+              <div class="dropdown-divider"></div>
+              <a href="account.html" class="nav-icon"
+                ><img style="width: 20px" src="image/user.png" alt=""
+              /></a>
+              <a href="cart.html" class="nav-icon"
+                ><img style="width: 25px" src="image/cart.png" alt=""
+              /></a>
+              <a href="#" class="nav-icon"
+                ><img style="width: 35px" src="image/delivery.png" alt=""
+              /></a>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-item">
+                <button onclick="loginPage()" class="btn-login">
+                  Đăng nhập
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <img src="image/logo.png" class="brand-logo" alt="" />
         <div class="nav-items">
@@ -37,9 +65,6 @@ const createNav = () => {
           <div class="btn-login-container">
             <button onclick="loginPage()" class="btn-login">Đăng nhập</button>
           </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
         </div>
       </div>
        `;
@@ -53,9 +78,4 @@ const loginPage = () => {
 
 const productPage = () => {
   window.location.href = "product.html";
-};
-
-const dropdownbtn = () => {
-  document.getElementById("myDropdown").classList.toggle("show");
-  console.log(document.getElementById("myDropdown").classList.toggle("show"));
 };
