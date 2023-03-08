@@ -45,7 +45,7 @@ button {
   background-color: #00ff00;
   border-radius: 12px;
 }
-.category .btn-pd{
+.category .btn-pd {
   float: right;
 }
 .category .btn-pd button {
@@ -256,5 +256,5 @@ button {
     grid-template-columns: repeat(1, 198px);
     grid-row-gap: 30px;
     margin-left: 65px;
-}
+  }
 }
