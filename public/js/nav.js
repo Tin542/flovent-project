@@ -25,10 +25,10 @@ const createNav = () => {
                 ><img style="width: 20px" src="image/user.png" alt=""
               /></a>
               <a href="cart.html" class="nav-icon"
-                ><img style="width: 25px" src="image/cart.png" alt=""
+                ><img style="width: 24px" src="image/cart.png" alt=""
               /></a>
               <a href="#" class="nav-icon"
-                ><img style="width: 35px" src="image/delivery.png" alt=""
+                ><img style="width: 29px" src="image/delivery.png" alt=""
               /></a>
               <div class="dropdown-divider"></div>
               <div class="dropdown-item">

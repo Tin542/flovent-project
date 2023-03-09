@@ -51,6 +51,7 @@ a {
   padding: 5px 20px;
   cursor: pointer;
   transition-duration: 0.4s;
+  margin-top: 12px;
 }
 .login-form button:hover {
   background-color: #00ff00;

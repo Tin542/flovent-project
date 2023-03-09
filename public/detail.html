@@ -63,12 +63,18 @@
 
           <div>
             <span class="product-amount">Số lượng: </span>
-            <button onclick="minusAmount()" class="btn-amount"><i class="far fa-arrow-alt-circle-left"></i></button>
-            <span id="thongbao">0</span>
-            <button onclick="addAmount()" class="btn-amount"><i class="far fa-arrow-alt-circle-right"></i></button>
-            <button onclick="cartPage()" class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ</button>
+            <button onclick="minusAmount()" class="btn-amount">
+              <i style="font-size: 20px" class="fa fa-minus-circle"></i>
+            </button>
+            <span style="font-size:20px;" id="thongbao">0</span>
+            <button onclick="addAmount()" class="btn-amount">
+              <i style="font-size: 20px" class="fa fa-plus-circle"></i>
+            </button>
+            <button onclick="cartPage()" class="btn-add-cart">
+              <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+            </button>
           </div>
-          <hr style="margin-top:44px"/>
+          <hr style="margin-top: 44px" />
           <div class="something">
             <a href="#">Chi tiết</a>
             <a href="#">Cẩm nang</a>
@@ -84,8 +90,8 @@
     <script src="js/footer.js"></script>
     <script>
       const cartPage = () => {
-        window.location.href = 'cart.html';
-      }
+        window.location.href = "cart.html";
+      };
     </script>
   </body>
 </html>

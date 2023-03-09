@@ -5,7 +5,7 @@
 .carousel-inner img {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
 }
 .carousel-inner .banner-title {
@@ -159,7 +159,7 @@ button {
   font-family: SVN-Gilroy;
 }
 .checked {
-  color: #ffff00;
+  color: #FED311;
 }
 
 .devider-container {
@@ -248,7 +248,7 @@ button {
 
 .collection img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   border-radius: 12px;
   object-fit: cover;
 }

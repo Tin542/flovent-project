@@ -4,7 +4,7 @@
 
 /* left filter */
 .left-filter {
-  width: 83%;
+  width: 70%;
   margin-top: 73px;
 }
 .left-filter h3 {
@@ -21,12 +21,13 @@
 .filter-items .btn-price {
   background: #ffffff;
   border: none;
+  width: 30px;
 }
 .filter-items .btn-filter {
   float: right;
   border: none;
   border-radius: 12px;
-  width: 102px;
+  width: 77px;
   background: #33744b;
   color: white;
   transition: 0.3s;
@@ -174,7 +175,7 @@ input[type="checkbox"] {
   grid-template-columns: repeat(3, 1fr);
   height: auto;
   grid-row-gap: 30px;
-  grid-column-gap: 30px;
+  grid-column-gap: 8px;
 }
 
 .product-card {
@@ -205,7 +206,7 @@ input[type="checkbox"] {
   font-family: SVN-Gilroy;
 }
 .checked {
-  color: #ffff00;
+  color: #FED311;
 }
 
 .paging-container {
