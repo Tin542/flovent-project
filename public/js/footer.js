@@ -1,8 +1,9 @@
 const createFooter = () => {
     let footer = document.querySelector("footer");
     footer.innerHTML = `<div class="footer-container">
+    <img class="logo" src="image/footer-logo.png" alt="logo" />
     <div class="container-fluid">
-      <img src="image/logo.png" alt="logo" />
+      
       <div class="row">
         <div class="col-sm-3">
           <div class="footer-category">
@@ -38,12 +39,12 @@ const createFooter = () => {
           <div class="footer-category">
             <p>Ảnh khác</p>
             <div class="footer-items">
-              <img src="image/product2.png" />
-              <img src="image/product2.png" />
-              <img src="image/product2.png" />
-              <img src="image/product2.png" />
-              <img src="image/product2.png" />
-              <img src="image/product2.png" />
+              <img src="image/product3.png" />
+              <img src="image/product5.png" />
+              <img src="image/product6.png" />
+              <img src="image/product7.png" />
+              <img src="image/product4.png" />
+              <img src="image/product8.png" />
             </div>
           </div>
         </div>
