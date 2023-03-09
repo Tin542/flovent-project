@@ -3,17 +3,76 @@
 
 /* carousel */
 .carousel-inner img {
+  position: relative;
   width: 100%;
   height: 500px;
   object-fit: cover;
 }
+.carousel-inner .banner-title {
+  position: absolute;
+  top: 23%;
+  left: 13%;
+  font-size: 50px;
+  font-family: SVN-Gilroy;
+  text-transform: capitalize;
+}
+.carousel-inner .banner-title h1 {
+  font-size: 60px;
+  color: #235135;
+  font-weight: boild;
+}
+.carousel-inner .banner-title p {
+  font-size: 40px;
+  color: #000000;
+  font-weight: boild;
+}
+.carousel-inner .banner-title button {
+  background: #235135;
+  font-size: 15px;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  width: 150px;
+}
+.carousel-inner .banner-title button:hover {
+  cursor: pointer;
+  background: #00ff00;
+  color: #ffffff;
+}
 
 /* left banner */
 .portal-banner {
+  position: relative;
   width: 323px;
   height: 750px;
   border-radius: 12px;
   object-fit: cover;
+}
+.portal-banner-title {
+  position: absolute;
+  top: 3%;
+  left: 11%;
+  font-size: 20px;
+  font-family: SVN-Gilroy;
+  text-transform: capitalize;
+  width: 64%;
+}
+.portal-banner-title p {
+  font-size: 30px;
+  font-weight: boild;
+  color: #000000;
+}
+.portal-banner-title button {
+  background: #235135;
+  color: #ffffff;
+  border: none;
+  font-size: 15px;
+  border-radius: 24px;
+  width: 140px;
+}
+.portal-banner-title button:hover {
+  background: #00ff00;
+  color: #ffffff;
 }
 
 /* category */
@@ -194,16 +253,31 @@ button {
   object-fit: cover;
 }
 
-/* .collection p {
+.collection .collection-title {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #ffffff;
+  top: 12%;
+  left: 3%;
+  color: #235135;
   font-size: 50px;
-  text-transform: capitalize;
-} */
+  font-family: SVN-Gilroy;
+}
+.collection .collection-title p {
+  font-size: 20px;
+  color: #000000;
+  font-weight: boild;
+}
+.collection .collection-title button {
+  background: #235135;
+  color: #ffffff;
+  border: none;
+  font-size: 15px;
+  border-radius: 24px;
+  width: 140px;
+}
+.collection .collection-title button:hover {
+  background: #00ff00;
+  color: #ffffff;
+}
 
 .collection:nth-child(1) {
   grid-column: span 2;
